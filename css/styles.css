@@ -6,6 +6,7 @@
   --portfolio-main: #212121;
   --background-color: #2f303a;
   --header-bgc: #ececec;
+  --focus-btn-color: #188ce8;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
 }
@@ -186,9 +187,11 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   padding-top: 200px;
   margin-bottom: 30px;
   text-align: center;
+
   width: 608px;
   margin-left: auto;
   margin-right: auto;
@@ -199,14 +202,17 @@ ul {
   color: var(--main-color);
   background-color: var(--logo-color);
   border: 0;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   cursor: pointer;
   font-family: inherit;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
   width: 216px;
   margin-left: 477px;
 
@@ -215,7 +221,7 @@ ul {
 .hero-btn:hover,
 .hero-btn:focus {
  cursor: pointer;
-  
+ background-color: var(--focus-btn-color); 
 }
 
 
@@ -547,7 +553,8 @@ ul {
   transition: var(--duration) var(--timing-function);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: var(--logo-color);
  
 }
@@ -610,6 +617,14 @@ ul {
 
   border: 0;
   border-radius: 4px;
+
+  cursor: pointer;
+  
+  transition: background-color var(--duration) var(--timing-function);
+}
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: var(--focus-btn-color);
 }
 .subscribe-icon {
   fill: currentColor;
